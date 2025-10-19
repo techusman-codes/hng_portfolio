@@ -16,10 +16,9 @@ class AboutScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           // Profile Picture
-          const CircleAvatar(
+          CircleAvatar(
             radius: 80,
-            backgroundImage: AssetImage("assets/images/ucee.jpg"),
-            backgroundColor: Color(0xFF00ADB5),
+            child: ClipOval(child: Image.asset("assets/images/ucee.jpeg")),
           ),
           const SizedBox(height: 16),
 
